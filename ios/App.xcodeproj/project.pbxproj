@@ -14,6 +14,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-App-AppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-App-AppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9B43543C46914214AF34006D /* TsukimiRounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D68738CA2FC435FB9E6260A /* TsukimiRounded-Bold.ttf */; };
+		94F373513468420E91201D88 /* TsukimiRounded-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACB036ABB90A4C99872F58D2 /* TsukimiRounded-Light.ttf */; };
+		E4C5C454FB91495BB65A269B /* TsukimiRounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 996D8C8D4FEE406CA95DFF67 /* TsukimiRounded-Medium.ttf */; };
+		9CDD5A888D6D4CE182FA7A37 /* TsukimiRounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12BCBB0A3F27416FA09477D4 /* TsukimiRounded-Regular.ttf */; };
+		DF9E54D828BB497DAB337501 /* TsukimiRounded-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0599DD220C1D448F92695473 /* TsukimiRounded-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		D613BE74887EFD801007EC4D /* Pods-App-AppTests.debugstaging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App-AppTests.debugstaging.xcconfig"; path = "Target Support Files/Pods-App-AppTests/Pods-App-AppTests.debugstaging.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FF163100BE969DFFE52B5231 /* Pods-App.releasestaging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.releasestaging.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.releasestaging.xcconfig"; sourceTree = "<group>"; };
+		9D68738CA2FC435FB9E6260A /* TsukimiRounded-Bold.ttf */ = {isa = PBXFileReference; name = "TsukimiRounded-Bold.ttf"; path = "../assets/fonts/TsukimiRounded-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ACB036ABB90A4C99872F58D2 /* TsukimiRounded-Light.ttf */ = {isa = PBXFileReference; name = "TsukimiRounded-Light.ttf"; path = "../assets/fonts/TsukimiRounded-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		996D8C8D4FEE406CA95DFF67 /* TsukimiRounded-Medium.ttf */ = {isa = PBXFileReference; name = "TsukimiRounded-Medium.ttf"; path = "../assets/fonts/TsukimiRounded-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		12BCBB0A3F27416FA09477D4 /* TsukimiRounded-Regular.ttf */ = {isa = PBXFileReference; name = "TsukimiRounded-Regular.ttf"; path = "../assets/fonts/TsukimiRounded-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0599DD220C1D448F92695473 /* TsukimiRounded-SemiBold.ttf */ = {isa = PBXFileReference; name = "TsukimiRounded-SemiBold.ttf"; path = "../assets/fonts/TsukimiRounded-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +146,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				61F1293DDFF04FCD9642903B /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -173,6 +184,19 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		61F1293DDFF04FCD9642903B /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				9D68738CA2FC435FB9E6260A /* TsukimiRounded-Bold.ttf */,
+				ACB036ABB90A4C99872F58D2 /* TsukimiRounded-Light.ttf */,
+				996D8C8D4FEE406CA95DFF67 /* TsukimiRounded-Medium.ttf */,
+				12BCBB0A3F27416FA09477D4 /* TsukimiRounded-Regular.ttf */,
+				0599DD220C1D448F92695473 /* TsukimiRounded-SemiBold.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -271,6 +295,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				9B43543C46914214AF34006D /* TsukimiRounded-Bold.ttf in Resources */,
+				94F373513468420E91201D88 /* TsukimiRounded-Light.ttf in Resources */,
+				E4C5C454FB91495BB65A269B /* TsukimiRounded-Medium.ttf in Resources */,
+				9CDD5A888D6D4CE182FA7A37 /* TsukimiRounded-Regular.ttf in Resources */,
+				DF9E54D828BB497DAB337501 /* TsukimiRounded-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

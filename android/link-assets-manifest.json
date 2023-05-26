@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/TsukimiRounded-Bold.ttf",
+      "sha1": "9ea17692dd6be396432445ad9de48c7524071b32"
+    },
+    {
+      "path": "assets/fonts/TsukimiRounded-Light.ttf",
+      "sha1": "f756b579b0b116c9e2f3643d396cbc5bc6dfb0e6"
+    },
+    {
+      "path": "assets/fonts/TsukimiRounded-Medium.ttf",
+      "sha1": "06528aee45c61a7784e843db000a252d414252ee"
+    },
+    {
+      "path": "assets/fonts/TsukimiRounded-Regular.ttf",
+      "sha1": "50ef0678007b146d60ebd987d3dccd09e8eeefbb"
+    },
+    {
+      "path": "assets/fonts/TsukimiRounded-SemiBold.ttf",
+      "sha1": "e5ba1ce4a49393440832c0cf4e7db02b9a8a07c3"
+    }
+  ]
+}
