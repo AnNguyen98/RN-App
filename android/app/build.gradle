@@ -5,7 +5,6 @@ project.ext.envConfigFiles = [
         production: ".env.production",
         development: ".env.development",
         staging: ".env.staging",
-        anothercustombuild: ".env",
 ]
 apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
@@ -147,22 +146,11 @@ android {
         }
     }
 
-    flavorDimensions "enviroment"
+    flavorDimensions.add("enviroment")
     productFlavors {
-        development {
-            dimension "enviroment"
-            applicationIdSuffix ".dev"
-            signingConfig signingConfigs.debug
-        }
-        staging {
-            dimension "enviroment"
-            applicationIdSuffix ".stg"
-            signingConfig signingConfigs.debug
-        }
-        production {
-            dimension "enviroment"
-            signingConfig signingConfigs.release
-        }
+        development { }
+        staging { }
+        production { }
     }
 
     // applicationVariants are e.g. debug, release

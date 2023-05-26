@@ -1,4 +1,4 @@
-# React Native (Note)
+# React Native (Notes) - Boilerplate
 
 ## Link assets
 
