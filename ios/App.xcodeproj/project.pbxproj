@@ -210,6 +210,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				BBB16CA52A20B7BF001C7D30 /* Generate tmp.xcconfig */,
 			);
 			buildRules = (
 			);
@@ -330,6 +331,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		BBB16CA52A20B7BF001C7D30 /* Generate tmp.xcconfig */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate tmp.xcconfig";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${SRCROOT}/../node_modules/react-native-config/ios/ReactNativeConfig/BuildXCConfig.rb\" \"${SRCROOT}/..\" \"${SRCROOT}/tmp.xcconfig\"\n\n";
 		};
 		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -513,20 +532,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(IOS_APP_BUILD_CODE)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(IOS_APP_VERSION_CODE)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(IOS_BUNDLE_IDENTIFIER)";
 				PRODUCT_MODULE_NAME = App;
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -543,19 +562,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(IOS_APP_BUILD_CODE)";
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(IOS_APP_VERSION_CODE)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(IOS_BUNDLE_IDENTIFIER)";
 				PRODUCT_MODULE_NAME = App;
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -568,8 +587,6 @@
 			baseConfigurationReference = BBA0198D2A1C5508008C2A26 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_NAME = "[DEV] App";
-				BUNDLE_IDENTIFIER = org.reactjs.native.example.app.dev;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -643,8 +660,6 @@
 			baseConfigurationReference = BBA0198D2A1C5508008C2A26 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_NAME = App;
-				BUNDLE_IDENTIFIER = org.reactjs.native.example.app;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -711,8 +726,6 @@
 			baseConfigurationReference = BBA0198D2A1C5508008C2A26 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_NAME = "[DEV] App";
-				BUNDLE_IDENTIFIER = org.reactjs.native.example.app.dev;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -789,20 +802,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(IOS_APP_BUILD_CODE)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(IOS_APP_VERSION_CODE)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(IOS_BUNDLE_IDENTIFIER)";
 				PRODUCT_MODULE_NAME = App;
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -843,8 +856,6 @@
 			baseConfigurationReference = BBA0198D2A1C5508008C2A26 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_NAME = "[STG] App";
-				BUNDLE_IDENTIFIER = org.reactjs.native.example.app.stg;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -921,20 +932,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(IOS_APP_BUILD_CODE)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(IOS_APP_VERSION_CODE)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(IOS_BUNDLE_IDENTIFIER)";
 				PRODUCT_MODULE_NAME = App;
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -975,8 +986,6 @@
 			baseConfigurationReference = BBA0198D2A1C5508008C2A26 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_NAME = "[DEV] App";
-				BUNDLE_IDENTIFIER = org.reactjs.native.example.app.dev;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1046,19 +1055,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(IOS_APP_BUILD_CODE)";
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(IOS_APP_VERSION_CODE)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(IOS_BUNDLE_IDENTIFIER)";
 				PRODUCT_MODULE_NAME = App;
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1095,8 +1104,6 @@
 			baseConfigurationReference = BBA0198D2A1C5508008C2A26 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_NAME = "[STG] App";
-				BUNDLE_IDENTIFIER = org.reactjs.native.example.app.stg;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1166,19 +1173,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(IOS_APP_BUILD_CODE)";
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(IOS_APP_VERSION_CODE)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(IOS_BUNDLE_IDENTIFIER)";
 				PRODUCT_MODULE_NAME = App;
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1215,8 +1222,6 @@
 			baseConfigurationReference = BBA0198D2A1C5508008C2A26 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_NAME = App;
-				BUNDLE_IDENTIFIER = org.reactjs.native.example.app;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1293,20 +1298,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(IOS_APP_BUILD_CODE)";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(IOS_APP_VERSION_CODE)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(IOS_BUNDLE_IDENTIFIER)";
 				PRODUCT_MODULE_NAME = App;
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1347,8 +1352,6 @@
 			baseConfigurationReference = BBA0198D2A1C5508008C2A26 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				APP_NAME = App;
-				BUNDLE_IDENTIFIER = org.reactjs.native.example.app;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -1418,19 +1421,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = "$(IOS_APP_BUILD_CODE)";
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = "$(IOS_APP_VERSION_CODE)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_IDENTIFIER)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(IOS_BUNDLE_IDENTIFIER)";
 				PRODUCT_MODULE_NAME = App;
 				PRODUCT_NAME = "$(APP_NAME)";
 				SWIFT_VERSION = 5.0;
