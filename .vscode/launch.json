@@ -1,0 +1,71 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug Android",
+      "cwd": "${workspaceFolder}",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "android"
+    },
+    {
+      "name": "Run Android",
+      "cwd": "${workspaceFolder}",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "android",
+      "enableDebug": false
+    },
+    {
+      "name": "Debug Development (iOS)",
+      "cwd": "${workspaceFolder}",
+      "type": "reactnative",
+      "request": "launch",
+      "scheme": "development",
+      "platform": "ios"
+    },
+    {
+      "name": "Release Development (iOS)",
+      "cwd": "${workspaceFolder}",
+      "type": "reactnative",
+      "request": "launch",
+      "scheme": "development",
+      "enableDebug": false,
+      "platform": "ios"
+    },
+    {
+      "name": "Debug Staging (iOS)",
+      "cwd": "${workspaceFolder}",
+      "type": "reactnative",
+      "request": "launch",
+      // "scheme": "staging",
+      "platform": "ios",
+      "target": "iPhone 14 Pro",
+      "sourceMaps": true,
+      "skipFiles": ["node_modules/**"]
+    },
+    {
+      "name": "Release Staging (iOS)",
+      "cwd": "${workspaceFolder}",
+      "type": "reactnative",
+      "request": "launch",
+      "scheme": "staging",
+      "enableDebug": false,
+      "sourceMaps": true,
+
+      "platform": "ios",
+      "target": "simulator"
+    },
+    {
+      "name": "Run iOS",
+      "cwd": "${workspaceFolder}",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "ios",
+      "enableDebug": false
+    }
+  ]
+}
